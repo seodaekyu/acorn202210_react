@@ -23,7 +23,7 @@ class App extends Component{
     handleKeyUp=(e)=>{
         console.log(e);
         // 만일 Enter key 를 눌렀다면
-        if(e.keyCode==13){
+        if(e.keyCode===13){
             // 입력한 문자열 읽어오기 (이벤트가 일어난 input 요소의 value 값)
             let msg = e.target.value;
             // 아래와 같이 배열에 아이템을 추가 한다고 해서 UI 가 update 되지는 않는다.
